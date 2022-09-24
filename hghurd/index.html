@@ -19,7 +19,7 @@
 			}
 
 			body{
-				background-image: url("Contents/back.jpg");
+				background-image: url("Contents/back-2.jpg");
 				height: 950px;
 				background-position: center;
 				background-repeat: no-repeat;
@@ -27,7 +27,7 @@
 			 	position: relative;
 				background-color: #1A355B;
 				font-family: 'fs-p';
-				margin-left: 10px;
+				margin: 0px;
 				justify-content: center;
 			}
 			b{
@@ -65,7 +65,7 @@
 				text-align: center;
 				padding: 20px;
 				/*opacity: 0.750;*/
-				background: rgba(255,255,255,0.75);
+				background: rgba(255,255,255,0.80);
 			}
 			img{
 				opacity: 1.00;
@@ -106,7 +106,7 @@
 				border-radius: 10px;
 			}
 			.t-l{
-				background-color: rgba(255,255,255,0.75);
+				background-color: rgba(255,255,255,0.80);
 				border-top-left-radius: 15px;
 				border-collapse: collapse;
 				text-align: center;
@@ -174,13 +174,13 @@
 			}
 			.b-l{
 				border-bottom-left-radius: 15px;
-				border-color: rgba(255,255,255,0.75);
+				border-color: rgba(255,255,255,0.80);
 				border-collapse: collapse;
 				text-align: center;
 				padding-left: 20px;
 			}
 			.b-r{
-				background-color: rgba(255,255,255,0.75);
+				background-color: rgba(255,255,255,0.80);
 				border-bottom-right-radius: 15px;
 				border-collapse: collapse;
 				color: white;
@@ -223,6 +223,7 @@
 			}
 			table {
 				justify-content: center;
+				width: 75%;
 			}
 
 			.search{
@@ -238,7 +239,7 @@
 				border-top-right-radius: 15px;
 				border-bottom-left-radius: 0px;
 				border-bottom-right-radius: 0px;
-				background-color: rgba(255,255,255,0.75); 
+				background-color: rgba(255,255,255,0.80);
 				height: 50px;
 				color: dimgray;
 
@@ -250,19 +251,25 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
+				width: 100%;
+				background-color: #000000;
 			}
 			div.weather{
-				width: 25%;
+				width: 70%;
+			}
+			div.container-trans{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+				background-color: rgba(0,0,0,0);
+				padding: 0px;
 			}
 		</style>
 	</head>
 	<body>
 		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<div class="container">
+		<div class="container-trans">
 			<div class="weather">
 				<a class="weatherwidget-io" href="https://forecast7.com/en/47d12n88d57/houghton/" data-label_1="HOUGHTON" data-label_2="WEATHER" data-font="Ubuntu" data-icons="Climacons Animated" data-shadow="#333333" data-textcolor="#FFFFFF" >HOUGHTON WEATHER</a>
 				<script>
@@ -270,19 +277,35 @@
 				</script>
 			</div>
 		</div>
-		<p>
-			<center>
-			<table width="70%">
+		<br>
+		<br>
+		<div class="container-trans">
+		<div>
+			<table>
+<!--
+				<tr>
+					<td class="top" colspan="5">
+						<a class="weatherwidget-io" href="https://forecast7.com/en/47d12n88d57/houghton/" data-label_1="HOUGHTON" data-label_2="WEATHER" data-font="Ubuntu" data-icons="Climacons Animated" data-shadow="#333333" data-textcolor="#FFFFFF" >HOUGHTON WEATHER</a>
+						<script>
+							!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+						</script>
+					</td>
+				</tr>
+-->
 				<tr>
 					<!--<td class = "t-l-yellow">
 						<small-top><u>Complete daily</u></small-top>
 						<a href="https://www.banweb.mtu.edu/owassb/symptom_form.p_form"><img src="Contents/mtu-flex-logo.png" height="40px" ></a>
 					</td>-->
-					<td class="top-yellow">
+					<td class="t-l">
+						<p>Handshake</p>
+					</td>
+					<td><p>Math Department</p></td> <!-- Replace this logo -->
+					<td>
 						<a href="https://health.healow.com/uglhealth"><img src="Contents/uglhealth-logo.png" height="40px"></a>
 					</td>
-					<td class = "invis" colspan="3"><p class="invis">placeholder</p></a></td>
-					<td class="top">
+					<td><a href="https://www.wikipedia.org"><img src="Contents/wikipedia-logo.png" height="40px"></a></td>
+					<td class="t-r">
 						<a href="https://www.tcfbank.com/personal/digital-banking"><img src="Contents/tcf-logo.png" height="40px"></a>
 					</td>
 					<!--<td class="t-r">
@@ -306,8 +329,8 @@
 					<td>
 						<a href="https://www.duolingo.com/"><img src="Contents/duolingo-logo.png" height="40px"></a>
 					</td>
-					<!-- <td class="b-r" rowspan="4" style="text-align: left;">• <b>3 Sep</b> First day of classes<br>-->
-				</td>
+					<!-- <td class="b-r" rowspan="4" style="text-align: left;">• <b>3 Sep</b> First day of classes<br>
+				</td>-->
 				
 				<tr>
 					<td>
@@ -320,7 +343,7 @@
 						<a href="https://www.youtube.com"><img src="Contents/youtube-logo.png" height="40px"></a>
 					</td>
 					<td>
-						<a href="https://www.bbc.com/news"><img src="Contents/bbc-news-logo.png" height="35px"></a>
+						<a href="https://www.bbc.com/news"><img src="Contents/bbc-news-logo.png" height="40px"></a>
 					</td>
 					<td>
 						<a href="https://maps.google.com/"><img src="Contents/maps-logo.png" height="40px"></a>
@@ -361,7 +384,7 @@
 						<a href="https://ici.radio-canada.ca/"><img src="Contents/ici-logo.png" height="40px"></a>
 					</td>
 					<td>
-						<a href="https://translate.google.com"><img src="Contents/translate-logo.png" height="50px"></a>
+						<a href="https://translate.google.com"><img src="Contents/translate-logo.png" height="40px"></a>
 					</td>
 				</tr>
 
@@ -375,18 +398,18 @@
 						<a href="https://bookshelf.vitalsource.com/"><img src="Contents/vitalsource-logo.png" height="40px" padding-left="20px"></a>
 					</td>
 					<td>
-						<a href="https://open.spotify.com/"><img src="Contents/spotify-logo.png" height = "40px">
+						<a href="https://open.spotify.com/"><img src="Contents/spotify-logo.png" height="40px"></a>
 					</td>
 					<td>
 						<a href="https://cbc.ca/news"><img src="Contents/CBC-logo.png" height="40px"></a>
 					</td>
 					<td class="b-r">
-						<a href="https://www.getipass.com/web/guest/home"><img src="Contents/ipass-logo-3.png" height="50px"></a>
+						<a href="https://www.getipass.com/web/guest/home"><img src="Contents/ipass-logo-3.png" height="40px"></a>
 					</td>
 				</tr>
 			</table>
-
-			</center>
+		</div>
+		</div>
 			<br>
 			<br>
 			<br>
@@ -403,6 +426,5 @@
 					<td>
 
 			-->
-		</p>
 	</body>
 </html>
