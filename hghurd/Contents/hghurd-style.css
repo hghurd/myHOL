@@ -221,7 +221,7 @@ table {
 }
 
 .search{
-    float: center;
+    /*float: center;*/
     padding: 10px;
     border: none;
     margin-bottom: 0px;
