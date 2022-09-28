@@ -2,270 +2,8 @@
 <html>
 	<head>
 		<title>Home</title>
-		<link rel="icon" href="Contents/icon.png" type="image/png" sizes="16x16">
-		<style>
-			@font-face {
-				font-family: "fs-head";
-				src: url('Contents/fira-sans.medium.ttf');
-			}
-
-			@font-face {
-				font-family: "fs-p";
-				src: url('Contents/fira-sans.regular.ttf');
-			}
-			@font-face {
-				font-family: "fs-b";
-				src: url('Contents/fira-sans.medium.ttf');
-			}
-
-			body{
-				background-image: url("Contents/back-3.jpg");
-				height: 950px;
-				background-position: center;
-				background-repeat: no-repeat;
-			 	background-size: cover;
-			 	position: relative;
-				background-color: #1A355B;
-				font-family: 'fs-p';
-				margin: 0px;
-				justify-content: center;
-			}
-			b{
-				font-family: "fs-b";
-			}
-			h1{
-				font-family: "fs-head";
-				font-size: 60px;
-				margin-left: 30px;
-			}
-			small{
-				font-family: "fs-p";
-				font-size: 10px;
-				color: white;
-				opacity: .50;
-			}
-			small-top{
-				font-family: "fs-p";
-				font-size: 10px;
-				color: black;
-				opacity: 1;
-				padding: 1px
-				padding-bottom: 5px;
-			}
-			td a {
-   				display:block;
-    			width:100%;
-    			color: #091A32;
-			}
-			hidden{
-				color: white;
-			}
-			td{
-				border-collapse: collapse;
-				text-align: center;
-				padding: 20px;
-				/*opacity: 0.750;*/
-				background: rgba(255,255,255,0.80);
-			}
-			img{
-				opacity: 1.00;
-			}
-			.today{
-				border: solid white 2px;
-				border-collapse: collapse;
-				text-align: center;
-				padding: 20px;
-				background-color: #1A355B;
-				color: white;
-				text-align: left;
-			}
-			
-			.title{
-				background-color: #1A355B;
-				color: white;
-			}
-			a{
-				color: #091A32;
-				text-decoration: none;
-				font-size: 20px;
-			}
-			fieldset{
-				background-color: white;
-				color: #1A355B;
-				border: solid #1A355B 5px;
-				border-radius: 15px;
-			}
-			legend{
-				background-color: #1A355B;
-				color: white;
-				padding-left: 10px;
-				padding-right: 10px;
-				padding-top: 5px;
-				padding-bottom: 5px;
-				border: solid #1A355B 2px;
-				border-radius: 10px;
-			}
-			.t-l{
-				background-color: rgba(255,255,255,0.80);
-				border-top-left-radius: 15px;
-				border-collapse: collapse;
-				text-align: center;
-				padding: 20px;
-			}
-			.top-yellow{
-				background-color: #FCCE01;
-				border-top-left-radius: 15px;
-				border-top-right-radius: 15px;
-				border-collapse: collapse;
-				text-align: center;
-				padding: 20px;
-			}
-			.t-l-yellow{
-				background-color: #FCCE01;
-				border-top-left-radius: 15px;
-				border-collapse: collapse;
-				text-align: center;
-				color: white;	
-			}
-
-			.t-r-yellow{
-				background-color: #FCCE01;
-				border-top-right-radius: 15px;
-				border-collapse: collapse;
-				text-align: center;
-				padding: 20px;
-			}
-
-			.t-r{
-				background-color: rgba(255,255,255, 0.80);
-				border-top-right-radius: 15px;
-				border-collapse: collapse;
-				text-align: center;
-				padding: 20px;
-			}
-
-			.top{
-				/*
-				border: solid #091A32 2px;
-				border-top-left-radius: 15px;
-				border-top-right-radius: 15px;
-				border-bottom-right-radius: 15px;
-				border-bottom-left-radius: 15px;
-				border-collapse: collapse;
-				text-align: center;
-				background-color: #091A32;
-				color: white;
-				font-size: 30px;
-				background-color: #FCCE01;
-				*/
-				border-top-left-radius: 15px;
-				border-top-right-radius: 15px;
-				border-collapse: collapse;
-				text-align: center;
-				color: white;
-
-			}
-		
-			.t-c{
-				border-color: rgba(255,255,255,0);
-				border-collapse: collapse;
-				text-align: center;
-				padding-left: 20px;
-			}
-			.b-l{
-				border-bottom-left-radius: 15px;
-				border-color: rgba(255,255,255,0.80);
-				border-collapse: collapse;
-				text-align: center;
-				padding-left: 20px;
-			}
-			.b-r{
-				background-color: rgba(255,255,255,0.80);
-				border-bottom-right-radius: 15px;
-				border-collapse: collapse;
-				color: white;
-				text-align: center;
-			/* .b-r{
-				border: solid #1A355B 2px;
-				border-bottom-right-radius: 15px;
-				border-collapse: collapse;
-				background-color: #1A355B;
-				color: white;
-				text-align: center;
-			*/
-			}
-			.cal{
-				text-align: left;
-			}
-			.dead{
-				border: solid rgba(255,255,255,0) 1px;
-				border-collapse: collapse;
-				text-align: center;
-				background-color: rgba(255,255,255,0);
-
-
-			}
-			a:hover{
-				color: #091A32;
-				text-decoration: underline;
-			}
-			.navbar{
-				color: white;
-				overflow: hidden;
-				background-color: rgba(255,255,255,0.25);
-				position: fixed;
-				top: 0;
-				left: 0;
-				width: 100%;
-				padding: 0px;
-				/* border-bottom: solid white 2px; */
-
-			}
-			table {
-				justify-content: center;
-				width: 75%;
-			}
-
-			.search{
-				float: center;
-  				padding: 10px;
-				border: none;
-				margin-bottom: 0px;
-				margin-right: 0px;
-				font-size: 20px;
-				border: solid rgba(255,255,255,0.0) 1px;
-				border-collapse: collapse;
-				border-top-left-radius: 15px;
-				border-top-right-radius: 15px;
-				border-bottom-left-radius: 0px;
-				border-bottom-right-radius: 0px;
-				background-color: rgba(255,255,255,0.80);
-				height: 50px;
-				color: dimgray;
-
-			}
-			.invis{
-				opacity: 0;
-			}
-			div.container{
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				width: 100%;
-				background-color: #000000;
-			}
-			div.weather{
-				width: 70%;
-			}
-			div.container-trans{
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				width: 100%;
-				background-color: rgba(0,0,0,0);
-				padding-top: 10%;
-			}
-		</style>
+		<link rel="icon" href="Contents/photos/icon.png" type="image/png" sizes="16x16">
+		<link rel="stylesheet" href="Contents/hghurd-style.css" type="text/css">
 	</head>
 	<body>
 		<div class="container">
@@ -292,96 +30,96 @@
 				<tr>
 					<!--<td class = "t-l-yellow">
 						<small-top><u>Complete daily</u></small-top>
-						<a href="https://www.banweb.mtu.edu/owassb/symptom_form.p_form"><img src="Contents/mtu-flex-logo.png" height="40px" ></a>
+						<a href="https://www.banweb.mtu.edu/owassb/symptom_form.p_form"><img src="Contents/photos/mtu-flex-logo.png" height="40px" ></a>
 					</td>-->
 					<td class="t-l">
-						<a href="https://mtu.joinhandshake.com/"><img src="Contents/handshake-logo.png" width="175px"></a>
+						<a href="https://mtu.joinhandshake.com/"><img src="Contents/photos/handshake-logo.png" width="175px"></a>
 					</td>
 					<td><p>Math Department</p></td> <!-- Replace this logo -->
 					<td>
-						<a href="https://health.healow.com/uglhealth"><img src="Contents/uglhealth-logo.png" height="40px"></a>
+						<a href="https://health.healow.com/uglhealth"><img src="Contents/photos/uglhealth-logo.png" height="40px"></a>
 					</td>
-					<td><a href="https://www.wikipedia.org"><img src="Contents/wikipedia-logo.png" height="40px"></a></td>
+					<td><a href="https://www.wikipedia.org"><img src="Contents/photos/wikipedia-logo.png" height="40px"></a></td>
 					<td class="t-r">
-						<a href="https://www.tcfbank.com/personal/digital-banking"><img src="Contents/tcf-logo.png" height="40px"></a>
+						<a href="https://www.tcfbank.com/personal/digital-banking"><img src="Contents/photos/tcf-logo.png" height="40px"></a>
 					</td>
 					<!--<td class="t-r">
-						<a href="https://houghtonoffcampushousing.appfolio.com/connect/users/sign_in"><img src="Contents/appfolio-logo.png" height="40px"></a>
+						<a href="https://houghtonoffcampushousing.appfolio.com/connect/users/sign_in"><img src="Contents/photos/appfolio-logo.png" height="40px"></a>
 					</td>-->
 				</tr>
 
 				<tr>
 					<td>
-						<a href="https://www.mtu.edu/library"><img src="Contents/mtu-library-logo.png" height="40px"></a>
+						<a href="https://www.mtu.edu/library"><img src="Contents/photos/mtu-library-logo.png" height="40px"></a>
 					</td>
 					<td>
-						<a href="https://sso.mtu.edu/cas/login?service=https%3A%2F%2Fmymichigantech.mtu.edu%2Fc%2Fportal%2Flogin"><img src="Contents/mmt-logo.png" height="40px"></a>
+						<a href="https://sso.mtu.edu/cas/login?service=https%3A%2F%2Fmymichigantech.mtu.edu%2Fc%2Fportal%2Flogin"><img src="Contents/photos/mmt-logo.png" height="40px"></a>
 					</td>
 					<td>
-						<a href="https://www.qwant.com"><img src="Contents/qwant-logo-wide.png" height="40px"></a>
+						<a href="https://www.qwant.com"><img src="Contents/photos/qwant-logo-wide.png" height="40px"></a>
 					</td>
 					<td>
-						<a href="https://www.npr.org/"><img src="Contents/npr-logo.png" height="40px"></a>
+						<a href="https://www.npr.org/"><img src="Contents/photos/npr-logo.png" height="40px"></a>
 					</td>
 					<td>
-						<a href="https://www.duolingo.com/"><img src="Contents/duolingo-logo.png" height="40px"></a>
+						<a href="https://www.duolingo.com/"><img src="Contents/photos/duolingo-logo.png" height="40px"></a>
 					</td>
 					<!-- <td class="b-r" rowspan="4" style="text-align: left;">• <b>3 Sep</b> First day of classes<br>
 				</td>-->
 				
 				<tr>
 					<td>
-						<a href="https://banweb.mtu.edu/"><img src="Contents/mtu-banweb-logo.png" height="40px" padding="0px"></a>
+						<a href="https://banweb.mtu.edu/"><img src="Contents/photos/mtu-banweb-logo.png" height="40px" padding="0px"></a>
 					</td>
 					<td>
-						<a href="https://cardservices.mtu.edu/login/ldap.php"><img src="Contents/mtu-card-logo.png" height="40px"></a>
+						<a href="https://cardservices.mtu.edu/login/ldap.php"><img src="Contents/photos/mtu-card-logo.png" height="40px"></a>
 					</td>
 					<td>
-						<a href="https://www.youtube.com"><img src="Contents/youtube-logo.png" height="40px"></a>
+						<a href="https://www.youtube.com"><img src="Contents/photos/youtube-logo.png" height="40px"></a>
 					</td>
 					<td>
-						<a href="https://www.bbc.com/news"><img src="Contents/bbc-news-logo.png" height="40px"></a>
+						<a href="https://www.bbc.com/news"><img src="Contents/photos/bbc-news-logo.png" height="40px"></a>
 					</td>
 					<td>
-						<a href="https://maps.google.com/"><img src="Contents/maps-logo.png" height="40px"></a>
+						<a href="https://maps.google.com/"><img src="Contents/photos/maps-logo.png" height="40px"></a>
 					</td>
 				</tr>
 				
 				<tr>
 					<td>
-						<a href="https://mtu.instructure.com/"><img src="Contents/canvas-logo.png" height="40px"></a>
+						<a href="https://mtu.instructure.com/"><img src="Contents/photos/canvas-logo.png" height="40px"></a>
 					</td>
 					<td>
 					
 						<a href="https://www.cengage.com/">
-						<img src="Contents/webassign-logo.png" height="40px">
+						<img src="Contents/photos/webassign-logo.png" height="40px">
 						</a>
 					</td>
 					<td>
-						<a href="https://www.netflix.com/"><img src="Contents/netflix-logo.png" height="40px"></a>
+						<a href="https://www.netflix.com/"><img src="Contents/photos/netflix-logo.png" height="40px"></a>
 					</td>
 					<td>
-						<a href="https://www.france24.com/fr/"><img src="Contents/france-24-logo-rec-2.png" height="40px"></a>
+						<a href="https://www.france24.com/fr/"><img src="Contents/photos/france-24-logo-rec-2.png" height="40px"></a>
 					</td>
 					<td>
-						<a href="https://www.reddit.com/"><img src="Contents/reddit-logo.png" height="40px"></a>
+						<a href="https://www.reddit.com/"><img src="Contents/photos/reddit-logo.png" height="40px"></a>
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<a href="https://calendar.google.com/calendar/b/1/r"><img src="Contents/cal-logo.png" height="40px"></a>
+						<a href="https://calendar.google.com/calendar/b/1/r"><img src="Contents/photos/cal-logo.png" height="40px"></a>
 					</td>
 					<td>
-						<a href="https://drive.google.com/drive/u/1/my-drive"><img src="Contents/drive-logo.png" height="40px"></a>
+						<a href="https://drive.google.com/drive/u/1/my-drive"><img src="Contents/photos/drive-logo.png" height="40px"></a>
 					</td>
 					<td>
-						<a href="https://www.amazon.com"><img src="Contents/amazon-logo.png" height="40px"></a>
+						<a href="https://www.amazon.com"><img src="Contents/photos/amazon-logo.png" height="40px"></a>
 					</td>
 					<td>
-						<a href="https://ici.radio-canada.ca/"><img src="Contents/ici-logo.png" height="40px"></a>
+						<a href="https://ici.radio-canada.ca/"><img src="Contents/photos/ici-logo.png" height="40px"></a>
 					</td>
 					<td>
-						<a href="https://translate.google.com"><img src="Contents/translate-logo.png" height="40px"></a>
+						<a href="https://translate.google.com"><img src="Contents/photos/translate-logo.png" height="40px"></a>
 					</td>
 				</tr>
 
@@ -389,19 +127,19 @@
 					
 					
 					<td class="b-l">
-						<a href="https://github.com/"><img src="Contents/github-logo-2.png" height="40px"></a>
+						<a href="https://github.com/"><img src="Contents/photos/github-logo-2.png" height="40px"></a>
 					</td>
 					<td>
-						<a href="https://bookshelf.vitalsource.com/"><img src="Contents/vitalsource-logo.png" height="40px" padding-left="20px"></a>
+						<a href="https://bookshelf.vitalsource.com/"><img src="Contents/photos/vitalsource-logo.png" height="40px" padding-left="20px"></a>
 					</td>
 					<td>
-						<a href="https://open.spotify.com/"><img src="Contents/spotify-logo.png" height="40px"></a>
+						<a href="https://open.spotify.com/"><img src="Contents/photos/spotify-logo.png" height="40px"></a>
 					</td>
 					<td>
-						<a href="https://cbc.ca/news"><img src="Contents/CBC-logo.png" height="40px"></a>
+						<a href="https://cbc.ca/news"><img src="Contents/photos/CBC-logo.png" height="40px"></a>
 					</td>
 					<td class="b-r">
-						<a href="https://www.getipass.com/web/guest/home"><img src="Contents/ipass-logo-3.png" height="40px"></a>
+						<a href="https://www.getipass.com/web/guest/home"><img src="Contents/photos/ipass-logo-3.png" height="40px"></a>
 					</td>
 				</tr>
 			</table>
@@ -413,13 +151,13 @@
 			<br>
 			<br>
 			<!--
-			<img src="Contents/foot.png" height="40px" style="opacity: 0.75;"></img>
+			<img src="Contents/photos/foot.png" height="40px" style="opacity: 0.75;"></img>
 			<fieldset>
 					<legend class="title"><b>Upcoming Events & Homework</b></legend>
 					<iframe width="100%" height="400" src="events.html" name="iframe_a" style="border:none; border-radius: 0px;"></iframe>
 			</fieldset>
 
-			<a href="http://webassign.net/"><img src="Contents/webassign-logo.png" height="40px"></a></td>
+			<a href="http://webassign.net/"><img src="Contents/photos/webassign-logo.png" height="40px"></a></td>
 					<td>
 
 			-->
