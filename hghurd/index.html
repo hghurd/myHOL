@@ -7,9 +7,37 @@
 		<style>
 			body{background-image: url("Contents/Photos/Backgrounds/back-3.jpg");}
 		</style>
+		<script type="text/javascript">
+			function startTime(){
+				var today = new Date();
+				var h = today.getHours();
+				var m = today.getMinutes();
+
+				var yy = today.getFullYear();
+				var mm = today.getMonth();
+				var dd = today.getDay();
+				h = checkTime(h);
+				m = checkTime(m);
+				mm = checkTime(mm);
+				dd = checkTime(dd);
+				document.getElementById('clock').innerHTML = h + ":" + m;
+				document.getElementById('date').innerHTML = yy + "-" + mm + "-" + dd;
+				t = setTimeout('startTime()', 500);
+			}
+			function checkTime(i){
+				if (i < 10){
+					i = "0" + i;
+				}
+				return i;
+			}
+		</script>
 	</head>
-	<body>
+	<body onload="startTime()">
 		<div class="container">
+			<div class="dateTime" align-items="left">
+				<div id="clock"></div>
+				<div id="date"></div>
+			</div>
 			<div class="weather">
 				<a class="weatherwidget-io" href="https://forecast7.com/en/47d12n88d57/houghton/" data-label_1="HOUGHTON" data-label_2="WEATHER" data-font="Ubuntu" data-icons="Climacons Animated" data-shadow="#333333" data-textcolor="#FFFFFF" >HOUGHTON WEATHER</a>
 				<script>
