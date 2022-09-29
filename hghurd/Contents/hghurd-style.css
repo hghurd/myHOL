@@ -12,6 +12,11 @@
     src: url('Fonts/fira-sans.medium.ttf');
 }
 
+@font-face {
+    font-family: "Ubuntu";
+    src: url("Fonts/ubuntu");
+}
+
 body{
     background-image: url("Photos/Backgrounds/back-3.jpg");
     height: 950px;
@@ -257,6 +262,7 @@ div.container, #clock, #date{
 
 #clock{
     font-size: 40px;
+    font-weight: bold;
 }
 
 #date{
