@@ -13,8 +13,12 @@
 }
 
 @font-face {
+    font-family: "Ubuntu-B";
+    src: url("Fonts/ubuntu/Ubuntu-B.ttf");
+}
+@font-face {
     font-family: "Ubuntu";
-    src: url("Fonts/ubuntu");
+    src: url("Fonts/ubuntu/Ubuntu-R.ttf");
 }
 
 body{
