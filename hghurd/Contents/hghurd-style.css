@@ -261,16 +261,16 @@ div.container, #clock, #date{
     align-items: center;
     justify-content: center;
     width: 100%;
-    font-family: Ubuntu, sans-serif;
 }
 
 #clock{
     font-size: 40px;
-    font-weight: bold;
+    font-family: "Ubuntu-B", sans-serif;
 }
 
 #date{
     font-size: 25px;
+    font-family: "Ubuntu", sans-serif;
 }
 
 .dateTime {
