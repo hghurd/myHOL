@@ -6,7 +6,7 @@ Use the date info to change the style of hghurd's homepage
 ------------------------------
 PSEUDO-CODE
 ------------------------------
-if (date is between [MAY 5] and [AUG 25]) {
+if (date is between [MAY 1] and [AUG 25]) {
   weather/date bar will have a blue background and white text
   will include a Chicago Cubs logo on left and/or right of the bar
 }
