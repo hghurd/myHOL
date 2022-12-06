@@ -275,8 +275,8 @@ div.container, #clock, #date{
 
 .dateTime {
     width: 10%;
-    color: #FFFFFF;
-    background-color: #000000;
+    color: white;
+    background-color: black;
     border: 1px white;
     border-radius: 15px;
     float: left;

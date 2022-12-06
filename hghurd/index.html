@@ -3,10 +3,7 @@
 	<head>
 		<title>Home</title>
 		<link rel="icon" href="Contents/Photos/icon.png" type="image/png" sizes="16x16">
-		<link rel="stylesheet" href="Contents/hghurd-style.css" type="text/css">
-		<style>
-			body{background-image: url("Contents/Photos/Backgrounds/back-3.jpg");}
-		</style>
+		<link rel="stylesheet" href="Contents/hghurd-style.css" type="text/css" id="style">
 		<script type="text/javascript">
 			function startTime(){
 				var today = new Date();
@@ -30,16 +27,44 @@
 				}
 				return i;
 			}
+			function checkDate(){
+				var today = new Date();
+				var mm = today.getMonth() + 1;
+
+				if (((mm > 5) && (mm < 9))) {
+						//Cubs theme
+					//document.getElementById('style').href = "Contents/hghurd-style-cubs.css";
+					document.getElementById('logo').src = "Contents/Photos/Logos/cubs-logo.png";
+					//document.getElementById('weather').setAttribute('data-textcolor', "#FFFFFF");
+					//document.getElementById('weather').setAttribute('data-shadow', "#000000");
+				}
+				else {
+					//MTU/default theme
+					document.getElementById('logo').src="Contents/Photos/Logos/mtu-logo.png";
+					//document.getElementById('style').href = "Contents/hghurd-style.css";
+					//document.getElementById('weather').setAttribute('data-textcolor', "#FFD000");
+					//document.getElementById('weather').setAttribute('data-shadow', "#000000");
+				}
+			}
 		</script>
+		<style>
+			body{background-image: url("Contents/Photos/Backgrounds/back-3.jpg");}
+		</style>
 	</head>
-	<body onload="startTime()">
+	<body onload="startTime(); checkDate()">
 		<div class="container">
+			<div>
+				<img src="" id="logo" height="100px"/>
+			</div>
+			<div>
+
+			</div>
 			<div class="dateTime" align-items="left">
 				<div id="clock"></div>
 				<div id="date"></div>
 			</div>
 			<div class="weather">
-				<a class="weatherwidget-io" href="https://forecast7.com/en/47d12n88d57/houghton/" data-label_1="HOUGHTON" data-label_2="WEATHER" data-font="Ubuntu" data-icons="Climacons Animated" data-shadow="#333333" data-textcolor="#FFFFFF" >HOUGHTON WEATHER</a>
+				<a class="weatherwidget-io" id="weather" href="https://forecast7.com/en/47d12n88d57/houghton/" data-label_1="HOUGHTON" data-label_2="WEATHER" data-font="Ubuntu" data-icons="Climacons Animated" data-shadow="#005395" data-textcolor="#FFFFFF" >HOUGHTON WEATHER</a>
 				<script>
 					!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 				</script>
