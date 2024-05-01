@@ -1,0 +1,303 @@
+@font-face {
+    font-family: "fs-head";
+    src: url('Fonts/fira-sans.medium.ttf');
+}
+
+@font-face {
+    font-family: "fs-p";
+    src: url('Fonts/fira-sans.regular.ttf');
+}
+@font-face {
+    font-family: "fs-b";
+    src: url('Fonts/fira-sans.medium.ttf');
+}
+
+@font-face {
+    font-family: "Ubuntu-B";
+    src: url("Fonts/ubuntu/Ubuntu-B.ttf");
+}
+@font-face {
+    font-family: "Ubuntu";
+    src: url("Fonts/ubuntu/Ubuntu-R.ttf");
+}
+
+body{
+    /*background-image: url("Photos/Backgrounds/back-1.jpg");*/
+    height: 950px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: #1A355B;
+    font-family: 'fs-p';
+    margin: 0px;
+    justify-content: center;
+}
+b{
+    font-family: "fs-b";
+}
+h1{
+    font-family: "fs-head";
+    font-size: 60px;
+    margin-left: 30px;
+}
+small{
+    font-family: "fs-p";
+    font-size: 10px;
+    color: white;
+    opacity: .50;
+}
+small-top{
+    font-family: "fs-p";
+    font-size: 10px;
+    color: black;
+    opacity: 1;
+    padding: 1px;
+    padding-bottom: 5px;
+}
+td a {
+    display:block;
+    width:100%;
+    color: #091A32;
+}
+hidden{
+    color: white;
+}
+td{
+    border-collapse: collapse;
+    text-align: center;
+    padding: 20px;
+    /*opacity: 0.750;*/
+    background: rgba(255,255,255,0.80);
+}
+img{
+    opacity: 1.00;
+}
+.today{
+    border: solid white 2px;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 20px;
+    background-color: #1A355B;
+    color: white;
+    text-align: left;
+}
+
+.title{
+    background-color: #1A355B;
+    color: white;
+}
+a{
+    color: #091A32;
+    text-decoration: none;
+    font-size: 20px;
+}
+fieldset{
+    background-color: white;
+    color: #1A355B;
+    border: solid #1A355B 5px;
+    border-radius: 15px;
+}
+legend{
+    background-color: #1A355B;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: solid #1A355B 2px;
+    border-radius: 10px;
+}
+.t-l{
+    background-color: rgba(255,255,255,0.80);
+    border-top-left-radius: 15px;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 20px;
+}
+.top-yellow{
+    background-color: #FCCE01;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 20px;
+}
+.t-l-yellow{
+    background-color: #FCCE01;
+    border-top-left-radius: 15px;
+    border-collapse: collapse;
+    text-align: center;
+    color: white;
+}
+
+.t-r-yellow{
+    background-color: #FCCE01;
+    border-top-right-radius: 15px;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 20px;
+}
+
+.t-r{
+    background-color: rgba(255,255,255, 0.80);
+    border-top-right-radius: 15px;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 20px;
+}
+
+.top{
+    /*
+    border: solid #091A32 2px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #091A32;
+    color: white;
+    font-size: 30px;
+    background-color: #FCCE01;
+    */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-collapse: collapse;
+    text-align: center;
+    color: white;
+
+}
+
+.t-c{
+    border-color: rgba(255,255,255,0);
+    border-collapse: collapse;
+    text-align: center;
+    padding-left: 20px;
+}
+.b-l{
+    border-bottom-left-radius: 15px;
+    border-color: rgba(255,255,255,0.80);
+    border-collapse: collapse;
+    text-align: center;
+    padding-left: 20px;
+}
+.b-r{
+    background-color: rgba(255,255,255,0.80);
+    border-bottom-right-radius: 15px;
+    border-collapse: collapse;
+    color: white;
+    text-align: center;
+    /* .b-r{
+        border: solid #1A355B 2px;
+        border-bottom-right-radius: 15px;
+        border-collapse: collapse;
+        background-color: #1A355B;
+        color: white;
+        text-align: center;
+    */
+}
+.cal{
+    text-align: left;
+}
+.dead{
+    border: solid rgba(255,255,255,0) 1px;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: rgba(255,255,255,0);
+
+
+}
+a:hover{
+    color: #091A32;
+    text-decoration: underline;
+}
+.navbar{
+    color: white;
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.25);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px;
+    /* border-bottom: solid white 2px; */
+
+}
+table {
+    justify-content: center;
+    width: 75%;
+}
+
+/*.search{
+    !*float: center;*!
+    padding: 10px;
+    border: none;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    font-size: 20px;
+    border: solid rgba(255,255,255,0.0) 1px;
+    border-collapse: collapse;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: rgba(255,255,255,0.80);
+    height: 50px;
+    color: dimgray;
+
+}*/
+
+.invis{
+    opacity: 0;
+}
+
+div.container{
+    background-color: #000000;
+}
+
+div.container, #clock, #date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#clock{
+    font-size: 40px;
+    font-family: "Ubuntu-B", sans-serif;
+}
+
+#date{
+    font-size: 25px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.dateTime {
+    width: 10%;
+    color: #FFFFFF;
+    background-color: #000000;
+    border: 1px white;
+    border-radius: 15px;
+    float: left;
+}
+
+div.weather{
+    width: 70%;
+}
+
+div.container-trans{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+    padding-top: 10%;
+}
+
+table.timeAndWeather, td.timeAndWeather{
+    background-color: black;
+    color: white;
+    border: 1px black;
+    border-collapse: collapse;
+}

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<link rel="icon" href="Contents/Photos/icon.png" type="image/png" sizes="16x16">
+		<link rel="stylesheet" href="Contents/hghurd-style-archived-05-2024.css" type="text/css" id="style">
+		<script type="text/javascript">
+			function startTime(){
+				var today = new Date();
+				var h = today.getHours();
+				var m = today.getMinutes();
+
+				var yy = today.getFullYear();
+				var mm = today.getMonth() + 1;
+				var dd = today.getDate();
+				h = checkTime(h);
+				m = checkTime(m);
+				mm = checkTime(mm);
+				dd = checkTime(dd);
+				document.getElementById('clock').innerHTML = h + ":" + m;
+				document.getElementById('date').innerHTML = yy + "-" + mm + "-" + dd;
+				t = setTimeout('startTime()', 500);
+			}
+			function checkTime(i){
+				if (i < 10){
+					i = "0" + i;
+				}
+				return i;
+			}
+			function checkDate(){
+				var today = new Date();
+				var mm = today.getMonth() + 1;
+
+				if (((mm >= 5) && (mm < 9))) {
+					//Cubs theme
+					//document.getElementById('style').href = "Contents/hghurd-style-cubs.css";
+					document.getElementById('logo').src = "Contents/Photos/Logos/cubs-logo.png";
+					//document.getElementById('weather').setAttribute('data-textcolor', "#FFFFFF");
+					//document.getElementById('weather').setAttribute('data-shadow', "#000000");
+				}
+				else {
+					//MTU/default theme
+					document.getElementById('logo').src="Contents/Photos/Logos/mtu-logo.png";
+					//document.getElementById('style').href = "Contents/hghurd-style.css";
+					//document.getElementById('weather').setAttribute('data-textcolor', "#FFD000");
+					//document.getElementById('weather').setAttribute('data-shadow', "#000000");
+				}
+			}
+		</script>
+		<style>
+			body{background-image: url("Contents/Photos/Backgrounds/back-3.jpg");}
+		</style>
+	</head>
+	<body onload="startTime(); checkDate()">
+		<div class="container">
+			<div>
+				<img src="" id="logo" height="100px"/>
+			</div>
+			<div>
+
+			</div>
+			<div class="dateTime" align-items="left">
+				<div id="clock"></div>
+				<div id="date"></div>
+			</div>
+			<div class="weather">
+				<a class="weatherwidget-io" id="weather" href="https://forecast7.com/en/47d12n88d57/houghton/" data-label_1="HOUGHTON" data-label_2="WEATHER" data-font="Ubuntu" data-icons="Climacons Animated" data-shadow="#005395" data-textcolor="#FFFFFF" >HOUGHTON WEATHER</a>
+				<script>
+					!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+				</script>
+			</div>
+		</div>
+		<div class="container-trans">
+		<div>
+			<table>
+<!--
+				<tr>
+					<td class="top" colspan="5">
+						<a class="weatherwidget-io" href="https://forecast7.com/en/47d12n88d57/houghton/" data-label_1="HOUGHTON" data-label_2="WEATHER" data-font="Ubuntu" data-icons="Climacons Animated" data-shadow="#333333" data-textcolor="#FFFFFF" >HOUGHTON WEATHER</a>
+						<script>
+							!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+						</script>
+					</td>
+				</tr>
+-->
+				<tr>
+					<!--<td class = "t-l-yellow">
+						<small-top><u>Complete daily</u></small-top>
+						<a href="https://www.banweb.mtu.edu/owassb/symptom_form.p_form"><img src="Contents/Photos/mtu-flex-logo.png" height="40px" ></a>
+					</td>-->
+					<td class="t-l">
+						<a href="https://www.mtu.edu/">
+							<img src="Contents/Photos/Logos/mtu-logo-wide.png" height="40px">
+						</a>
+					</td>
+					<td><a href="https://math.mtu.edu/">
+						<img src="Contents/Photos/Logos/math-logo.png" height="40px"></a>
+					</td> <!-- Replace this logo -->
+					<td>
+						<a href="https://portal.discover.com/customersvcs/universalLogin/ac_main">
+							<img src="Contents/Photos/Logos/discover-logo.png" height="40px"/>
+						</a>
+					</td>
+					<td>
+						<a href="https://www.duckduckgo.com/">
+							<img src="Contents/Photos/Logos/duckduckgo-logo.png" height="40px">
+						</a>
+					</td>
+					<td class="t-r">
+						<a href="https://www.amtrak.com/">
+							<img src="Contents/Photos/Logos/amtrak-logo.png" height="40px">
+						</a>
+					</td>
+
+					<!--<td class="t-r">
+						<a href="https://houghtonoffcampushousing.appfolio.com/connect/users/sign_in"><img src="Contents/Photos/appfolio-logo.png" height="40px"></a>
+					</td>-->
+				</tr>
+
+				<tr>
+
+					<td>
+						<a href="https://my.hfcc.edu/students">
+							<img src="Contents/Photos/Logos/hfc-logo.png" width="175px" padding="0px">
+						</a>
+					</td>
+					<td>
+						<a href="https://sso.mtu.edu/cas/login?service=https%3A%2F%2Fmymichigantech.mtu.edu%2Fc%2Fportal%2Flogin">
+							<img src="Contents/Photos/Logos/mmt-logo.png" height="40px">
+						</a>
+					</td>
+					<td>
+						<a href="https://www.huntington.com/Personal/online-banking/digital-banking-tools/">
+							<img src="Contents/Photos/Logos/huntington-logo.png" width="175px">
+						</a>
+					</td>
+					<td>
+						<a href="https://www.duolingo.com/">
+							<img src="Contents/Photos/Logos/duolingo-logo.png" height="40px">
+						</a>
+					</td>
+					<td>
+						<a href="https://maps.google.com/">
+							<img src="Contents/Photos/Logos/maps-logo.png" width="175px">
+						</a>
+					</td>
+					<!-- <td class="b-r" rowspan="4" style="text-align: left;">• <b>3 Sep</b> First day of classes<br>
+				</td>-->
+
+				<tr>
+					<td>
+						<a href="https://mtu.instructure.com/">
+							<img src="Contents/Photos/Logos/canvas-logo.png" height="40px">
+						</a>
+					</td>
+					<td>
+						<a href="https://www.cengage.com/">
+							<img src="Contents/Photos/Logos/webassign-logo.png" height="40px">
+						</a>
+					</td>
+					<td>
+						<a href="https://health.healow.com/uglhealth">
+							<img src="Contents/Photos/Logos/uglhealth-logo.png" height="40px">
+						</a>
+					</td>
+					<td>
+						<a href="https://www.netflix.com/">
+							<img src="Contents/Photos/Logos/netflix-logo.png" height="40px">
+						</a>
+					</td>
+					<td>
+						<a href="https://translate.google.com">
+							<img src="Contents/Photos/Logos/google-translate-logo.png" width="175px">
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://calendar.google.com/calendar/b/1/r">
+							<img src="Contents/Photos/Logos/cal-logo.png" height="40px">
+						</a>
+					</td>
+					<td>
+						<a href="https://drive.google.com/drive/u/1/my-drive">
+							<img src="Contents/Photos/Logos/drive-logo.png" height="40px">
+						</a>
+					</td>
+					<td>
+						<a href="https://www.clickondetroit.com">
+							<img src="Contents/Photos/Logos/click-on-detroit-logo.png" height="40px">
+						</a>
+					</td>
+					<td>
+						<a href="https://www.reddit.com/">
+							<img src="Contents/Photos/Logos/reddit-logo.png" height="40px">
+						</a>
+					</td>
+					<td>
+						<a href="https://www.getipass.com/web/guest/home">
+							<img src="Contents/Photos/Logos/ipass-logo-3.png" height="40px">
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://mtu.joinhandshake.com/">
+							<img src="Contents/Photos/Logos/handshake-logo.png" width="175px">
+						</a>
+					</td>
+					<td>
+						<a href="https://mail.google.com/mail/u/1/">
+							<img src="Contents/Photos/Logos/gmail-logo.png" width="150px">
+						</a>
+					</td>
+					<td>
+						<a href="https://www.target.com/">
+							<img src="Contents/Photos/Logos/target-logo.png" width="175px">
+						</a>
+					</td>
+					<td>
+						<a href="https://www.wikipedia.org">
+							<img src="Contents/Photos/Logos/wikipedia-logo.png" height="40px">
+						</a>
+					</td>
+					<td>
+						<a href="https://open.spotify.com/">
+							<img src="Contents/Photos/Logos/spotify-logo.png" height="40px">
+						</a>
+					</td>
+
+				</tr>
+				<tr>
+					<td class="b-l">
+						<a href="https://github.com/">
+							<img src="Contents/Photos/Logos/github-logo-2.png" height="40px">
+						</a>
+					</td>
+					<td>
+						<a href="https://bookshelf.vitalsource.com/">
+							<img src="Contents/Photos/Logos/vitalsource-logo.png" height="40px" padding-left="20px">
+						</a>
+					</td>
+					<td>
+						<a href="https://www.amazon.com">
+							<img src="Contents/Photos/Logos/amazon-logo.png" height="40px">
+						</a>
+					</td>
+					<td>
+						<a href="https://www.youtube.com">
+							<img src="Contents/Photos/Logos/youtube-logo.png" height="40px">
+						</a>
+					</td>
+					<td class="b-r">
+						<a href="https://www.ventrachicago.com/">
+							<img src="Contents/Photos/Logos/ventra-logo.png" height="40px"/>
+						</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+		</div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<!--
+			<img src="Contents/Photos/foot.png" height="40px" style="opacity: 0.75;"></img>
+			<fieldset>
+					<legend class="title"><b>Upcoming Events & Homework</b></legend>
+					<iframe width="100%" height="400" src="events.html" name="iframe_a" style="border:none; border-radius: 0px;"></iframe>
+			</fieldset>
+
+			<a href="http://webassign.net/"><img src="Contents/Photos/webassign-logo.png" height="40px"></a></td>
+					<td>
+
+			-->
+	</body>
+</html>
