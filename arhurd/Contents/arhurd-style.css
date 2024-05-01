@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "fs-head";
+    src: url('Fonts/fira-sans.medium.ttf');
+}
+
+@font-face {
+    font-family: "fs-p";
+    src: url('Fonts/fira-sans.regular.ttf');
+}
+body{
+    background-image: url("Photos/back.jpg");
+    height: 825px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color:  #262626;
+    color: #333333;
+    font-family: 'fs-p';
+    margin-left: 30px;
+    justify-content: center;
+}
+
+h1{
+    font-family: "fs-head";
+    font-size: 60px;
+    margin-left: 30px;
+}
+small{
+    font-family: "fs-p";
+    font-size: 10px;
+    color: grey;
+}
+td{
+    border: solid white 2px;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    opacity: 0.80;
+}
+.title{
+    background-color: #333333;
+    color: white;
+}
+a{
+    color: #333333;
+    text-decoration: none;
+    font-size: 20px;
+}
+fieldset{
+    background-color: white;
+    color: #333333;
+    border: solid #333333 5px;
+    border-radius: 15px;
+}
+legend{
+    background-color: #333333;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: solid #333333 2px;
+    border-radius: 10px;
+}
+.t-l{
+    border: solid white 2px;
+    border-top-left-radius: 15px;
+    text-align: center;
+    background-color: white;
+    color: white;
+    font-size: 30px;
+}
+.t-r{
+    border: solid white 2px;
+    border-top-right-radius: 15px;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: white;
+    color: white;
+    font-size: 30px;
+}
+.b-l{
+    border: solid white 2px;
+    border-bottom-left-radius: 15px;
+    border-collapse: collapse;
+    text-align: center;
+}
+.b-r{
+    border: solid white 2px;
+    border-bottom-right-radius: 15px;
+    border-collapse: collapse;
+    text-align: center;
+}
+a:hover{
+    color: #58FAD0;
+    text-decoration: underline;
+}
+.navbar{
+    color: white;
+    overflow: hidden;
+    background-color: #333333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* border-bottom: solid white 2px; */
+
+}
+table {
+    justify-content: center;
+}
