@@ -1,0 +1,24 @@
+------------------------------
+UPDATE INFO
+------------------------------
+Use JavaScript to get the date
+Use the date info to change the style of hghurd's homepage
+------------------------------
+PSEUDO-CODE
+------------------------------
+if (date is between [MAY 1] and [AUG 25]) {
+  weather/date bar will have a blue background and white text
+  will include a Chicago Cubs logo on left and/or right of the bar
+}
+else
+{
+  weather/date bar will have a black background and yellow text
+  will include an MTU logo in the same place(s) as the Cubs logo otherwise
+}
+AND
+if (date cannot be found) {
+  no logo, black background and white text (as it appears now)
+}
+------------------------------
+END OF PSEUDO-CODE
+------------------------------

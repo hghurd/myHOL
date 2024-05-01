@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Dashboard</title>
+		<link rel="icon" href="Contents/Photos/icon.png" type="image/png" sizes="16x16">
+		<link rel="stylesheet" href="Contents/new-hghurd-style-dev.css" type="text/css" id="style">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript">
+			function startTime(){
+				var today = new Date();
+				var h = today.getHours();
+				var m = today.getMinutes();
+
+				var yy = today.getFullYear();
+				var mm = today.getMonth() + 1;
+				var dd = today.getDate();
+				h = checkTime(h);
+				m = checkTime(m);
+				mm = checkTime(mm);
+				dd = checkTime(dd);
+				document.getElementById('clock').innerHTML = h + ":" + m;
+				document.getElementById('date').innerHTML = yy + "-" + mm + "-" + dd;
+				t = setTimeout('startTime()', 500);
+			}
+			function checkTime(i){
+				if (i < 10){
+					i = "0" + i;
+				}
+				return i;
+			}
+			function checkDate(){
+				var today = new Date();
+				var mm = today.getMonth() + 1;
+
+				if (((mm >= 5) && (mm < 9))) {
+					//Cubs theme
+					//document.getElementById('style').href = "Contents/hghurd-style-cubs.css";
+					document.getElementById('logo').src = "Contents/Photos/Logos/cubs-logo.png";
+					//document.getElementById('weather').setAttribute('data-textcolor', "#FFFFFF");
+					//document.getElementById('weather').setAttribute('data-shadow', "#000000");
+				}
+				else {
+					//MTU/default theme
+					document.getElementById('logo').src="Contents/Photos/Logos/mtu-logo.png";
+					//document.getElementById('style').href = "Contents/hghurd-style.css";
+					//document.getElementById('weather').setAttribute('data-textcolor', "#FFD000");
+					//document.getElementById('weather').setAttribute('data-shadow', "#000000");
+				}
+			}
+		</script>
+		<style>
+			body{background-image: url("Contents/Photos/Backgrounds/back-8.jpg");}
+			.material-symbols-outlined {
+  			font-variation-settings:
+  			'FILL' 0,
+  			'wght' 400,
+  			'GRAD' 0,
+  			'opsz' 30;
+			}
+		</style>
+	</head>
+	<body onload="startTime(); checkDate()">
+		<div class="container">
+			<div>
+				<img src="" id="logo" height="100px"/>
+			</div>
+			<div>
+			</div>
+			<div class="dateTime" align-items="left">
+				<div id="clock"></div>
+				<div id="date"></div>
+			</div>
+			<div class="weather">
+				<a class="weatherwidget-io" href="https://forecast7.com/en/42d32n83d18/dearborn/" data-label_1="DEARBORN" data-label_2="WEATHER" data-font="Noto Sans" data-icons="Climacons Animated" data-theme="dark" >DEARBORN WEATHER</a>
+					<script>
+						!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+					</script>
+			</div>
+		</div>
+		<div class="container-trans">
+			<div class="card">
+				<h2><span class="material-symbols-outlined">school</span>  University</h2>
+				<ul>
+					<li><a href="https://www.hfcc.edu">Henry Ford College</a></li>
+					<li><a href="https://my.hfcc.edu/students">HFC Student Portal</a></li>
+					<li><a href="https://mail.google.com/mail/u/1/">HFC HawkMail</a></li>
+					<li><a href="https://calendar.google.com/calendar/b/1/r">Google Calendar</a></li>
+					<li><a href="https://drive.google.com/drive/u/1/my-drive">Google Drive</a></li>
+					<li><a href="https://github.com/">Github</a></li>
+					<li><a href="https://hfcc.joinhandshake.com/">Handshake</a></li>
+					<li><a href="https://bookshelf.vitalsource.com/">VitalSource</a></li>
+				</ul>
+			</div>
+			<div class="card">
+				<h2><span class="material-symbols-outlined">share</span>  Social Media</h2>
+				<ul>
+					<li><a href="https://www.reddit.com/">Reddit</a></li>
+					<li><a href="https://www.youtube.com/">YouTube</a></li>
+					<li><a href="https://www.duolingo.com/">Duolingo</a></li>
+					<li><a href="https://www.netflix.com/">Netflix</a></li>
+					<li><a href="https://www.discord.com/">Discord</a></li>
+					<li><a href="https://mail.google.com/mail/u/0/">Gmail</a></li>
+					<li><a href="https://account.proton.me/login">ProtonMail</a></li>
+				</ul>
+			</div>
+			<div class="card">
+				<h2><span class="material-symbols-outlined">currency_exchange</span>  Banking/Shopping</h2>
+				<ul>
+					<li><a href="https://www.huntington.com/Personal/online-banking/digital-banking-tools/">Huntington Bank</a></li>
+					<li><a href="https://portal.discover.com/customersvcs/universalLogin/ac_main">Discover Credit</a></li>
+					<li><a href="https://www.discover.com/student-loans/">Discover Student Loans</a></li>
+					<li><a href="https://www.amazon.com/">Amazon.com</a></li>
+					<li><a href="https://www.target.com/">Target</a></li>
+					<li><a href="https://www.meijer.com/">Meijer</a></li>
+					<li><a href="https://www.kroger.com/">Kroger</a></li>
+				</ul>
+			</div>
+<!--
+</div>
+<div class="container-trans">
+-->
+			<div class="card">
+				<h2><span class="material-symbols-outlined">train</span>  Travel</h2>
+				<ul>
+					<li><a href="https://www.amtrak.com/">Amtrak</a></li>
+					<li><a href="https://maps.google.com/">Google Maps</a></li>
+					<li><a href="https://translate.google.com/">Google Translate</a></li>
+					<li><a href="https://ua.getipass.com/web/guest/home">Illinois Tollway</a></li>
+					<li><a href="https://open.spotify.com/">Spotify</a></li>
+					<li><a href="https://www.ventrachicago.com/">Ventra</a></li>
+					<li><a href="https://ridertools.metrarail.com/maps-schedules">Metra</a></li>
+				</ul>
+			</div>
+			<div class="card">
+				<h2><span class="material-symbols-outlined">newspaper</span>  News/Reading</h2>
+				<ul>
+					<li><a href="https://www.apnews.com/">AP News</a></li>
+					<li><a href="https://www.cbsnews.com/">CBS News</a></li>
+					<li><a href="https://www.clickondetroit.com/">ClickOnDetroit</a></li>
+					<li><a href="https://www.cbsnews.com/chicago/">CBS Chicago</a></li>
+					<li><a href="https://www.cbsnews.com/minnesota/">CBS Minnesota</a></li>
+					<li><a href="https://www.13abc.com/">ABC13 Toledo</a></li>
+					<li><a href="https://www.wikipedia.org/">Wikipedia</a></li>
+				</ul>
+			</div>
+			<div class="card">
+				<h2><span class="material-symbols-outlined">menu</span>  Miscellaneous</h2>
+				<ul>
+					<li><a href="https://www.duckduckgo.com/">DuckDuckGo</a></li>
+					<li><a href="https://corewellhealth.org/mychart">Corewell Health</a></li>
+					<li><a href="https://health.healow.com/uglhealth">UGL Family Health</a></li>
+					<li><a href="">Link 4</a></li>
+					<li><a href="">Link 5</a></li>
+					<li><a href="">Link 6</a></li>
+					<li><a href="">Link 7</a></li>
+				</ul>
+			</div>
+			<div class="card">
+				<h2><span class="material-symbols-outlined">event</span>  Upcoming Events</h2>
+				<p>Pardon our dust, this feature is still in development.</p>
+			</div>
+			<!--
+			<div class="card">
+				<h2>Frequently Used</h2>
+			</div>
+			-->
+		</div>
+		<small>Maintained by myHurdOnLine Personal Dashboards</small>
+		<br>
+		<small>Weather by WeatherWidget-IO</small>
+		<br>
+		<small>Icons by Google (c)2024</small>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+[*] Update logos/links
+      - Not going to Tech anymore, maybe remove Tech logos and links
+      - Find a HFC logo for the page's banner (?)
+
+[*] Update weather widget
+      - Find out where you found the code
+      - Change location to either Wyandotte or Dearborn
+
+[*] Stop using two logos in the banner (?)
+
+[*] Implement dynamic resizing
+      - Read a bunch of shizz on W3Schools, prolly?
+
+[*] Import deadlines/events from Canvas/Moodle/Google Calendar
+      - Import date(s), time(s) and assignment names
+      - Make a new container for a to-do widget
+      - Maybe a different container for upcoming events (NOT ASSIGNMENTS)
+      - Style it accordingly
+
+[*] Try to separate school and personal links
+      - Put links in their own respective containers
+          --I.E.: A school links 'widget' and a personal links 'widget'
+      - Use more width of the page
+
+[*] Use a new style (?)
+      - Different CSS?
+      - Completely different configuration?
