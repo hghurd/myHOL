@@ -20,7 +20,9 @@
     font-family: "Ubuntu";
     src: url("Fonts/ubuntu/Ubuntu-R.ttf");
 }
-
+* {
+  box-sizing: border-box;
+}
 body{
     /*background-image: url("Photos/Backgrounds/back-1.jpg");*/
     height: 100vh;
@@ -81,20 +83,6 @@ td{
 img{
     opacity: 1.00;
 }
-.today{
-    border: solid white 2px;
-    border-collapse: collapse;
-    text-align: center;
-    padding: 20px;
-    background-color: #1A355B;
-    color: white;
-    text-align: left;
-}
-
-.title{
-    background-color: #1A355B;
-    color: white;
-}
 a{
     color: #091A32;
     text-decoration: none;
@@ -116,60 +104,6 @@ legend{
     border: solid #1A355B 2px;
     border-radius: 10px;
 }
-.t-l{
-    background-color: rgba(255,255,255,0.80);
-    border-top-left-radius: 15px;
-    border-collapse: collapse;
-    text-align: center;
-    padding: 20px;
-}
-.top-yellow{
-    background-color: #FCCE01;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-collapse: collapse;
-    text-align: center;
-    padding: 20px;
-}
-.t-l-yellow{
-    background-color: #FCCE01;
-    border-top-left-radius: 15px;
-    border-collapse: collapse;
-    text-align: center;
-    color: white;
-}
-.t-r{
-    background-color: rgba(255,255,255, 0.80);
-    border-top-right-radius: 15px;
-    border-collapse: collapse;
-    text-align: center;
-    padding: 20px;
-}
-.top{
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-collapse: collapse;
-    text-align: center;
-    color: white;
-
-}
-.t-c{
-    border-color: rgba(255,255,255,0);
-    border-collapse: collapse;
-    text-align: center;
-    padding-left: 20px;
-}
-.navbar{
-    color: white;
-    overflow: hidden;
-    background-color: rgba(255,255,255,0.25);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 0px;
-    /* border-bottom: solid white 2px; */
-}
 table {
     justify-content: center;
     width: 75%;
@@ -183,7 +117,7 @@ div.container{
     background-color: #000000;
 }
 
-div.container, div.container-red, #clock, #date{
+div.container, #clock, #date{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -191,12 +125,12 @@ div.container, div.container-red, #clock, #date{
 }
 
 #clock{
-    font-size: 40px;
+    font-size: 2vw;
     font-family: "Ubuntu-B", sans-serif;
 }
 
 #date{
-    font-size: 25px;
+    font-size: 1.25vw;
     font-family: "Ubuntu", sans-serif;
 }
 
@@ -206,12 +140,13 @@ div.container, div.container-red, #clock, #date{
     background-color: #000000;
     border: 1px white;
     border-radius: 15px;
-    float: left;
+    float: center;
 }
 
 div.weather{
     width: 70%;
     height: 10%;
+    float: right;
 }
 
 table.timeAndWeather, td.timeAndWeather{
