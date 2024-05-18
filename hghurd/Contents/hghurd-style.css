@@ -167,18 +167,23 @@ div.container-trans{
     padding-bottom: 2.25%;
 }
 
-div.card{
-  /*text-align: center;*/
-  width: 20%;
+div.card, div.calcard{
   height: 30vh;
   color: black;
   margin: 2%;
   margin-bottom: 0%;
   padding-bottom: 1%;
   border-radius: 15px;
-  /*opacity: 0.750;*/
   background: rgba(255,255,255,0.80);
   overflow-block: clip;
+}
+
+div.card {
+  width: 20%;
+}
+
+div.calcard {
+  width: 44%;
 }
 
 ul{
