@@ -53,6 +53,8 @@ h2.cal{
   text-align: center;
   font-family: inherit;
   font-size: 1.5vw;
+  padding-top: 3%;
+  padding-bottom: 0;
 }
 small{
     font-family: "fs-p";
