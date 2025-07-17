@@ -1,0 +1,6 @@
+# This is the robots.txt file for the myHurdOnLine portal pages.
+# No part of this website should be scraped by any robot for any reason, so here's a simple solution: DON'T SCRAPE ANYTHING!
+# Be absolutely sure to follow what is laid out in this file.
+
+User-agent: *
+Disallow: /
